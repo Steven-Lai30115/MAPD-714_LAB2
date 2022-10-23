@@ -34,25 +34,36 @@
                                     <action selector="selectButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZtV-Z7-wsX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebI-Zc-kuq">
+                                <rect key="frame" x="39" y="497" width="296" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="f2v-Wo-3Vp" firstAttribute="top" secondItem="YAE-gk-BJL" secondAttribute="bottom" constant="31" id="1U0-EX-7bJ"/>
                             <constraint firstItem="YAE-gk-BJL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="B2c-LJ-J0N"/>
+                            <constraint firstItem="ebI-Zc-kuq" firstAttribute="top" secondItem="f2v-Wo-3Vp" secondAttribute="bottom" constant="92" id="Les-AS-4Cd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YAE-gk-BJL" secondAttribute="bottom" constant="428" id="TtB-UG-vlm"/>
                             <constraint firstItem="YAE-gk-BJL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="dkr-AM-IWG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ebI-Zc-kuq" secondAttribute="bottom" constant="243" id="g1O-6f-lbq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ebI-Zc-kuq" secondAttribute="trailing" constant="55" id="rKC-6l-GE1"/>
                             <constraint firstItem="f2v-Wo-3Vp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="txh-Bk-hf7"/>
+                            <constraint firstItem="ebI-Zc-kuq" firstAttribute="leading" secondItem="YAE-gk-BJL" secondAttribute="leading" id="zj3-RE-znP"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="DatePicker" image="calendar" catalog="system" id="IMq-0t-zp9"/>
                     <connections>
                         <outlet property="datePickerControl" destination="YAE-gk-BJL" id="Qvv-oh-kU6"/>
+                        <outlet property="selectTime" destination="ebI-Zc-kuq" id="Kgh-7A-aNJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="-353"/>
+            <point key="canvasLocation" x="1061.5384615384614" y="-353.3175355450237"/>
         </scene>
         <!--MultiPicker-->
         <scene sceneID="w2k-7n-LTu">

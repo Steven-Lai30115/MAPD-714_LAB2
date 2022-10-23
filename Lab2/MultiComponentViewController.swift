@@ -51,9 +51,9 @@ class MultiComponentViewController: UIViewController, UIPickerViewDelegate, UIPi
         let BlueChannelIndex = pickerView.selectedRow(inComponent: Blue.rawValue)
         let GreenChannelIndex = pickerView.selectedRow(inComponent: Green.rawValue)
         
-        let redChannel = CGFloat((valueArray[RedChannelIndex] as NSString).floatValue) / 255
-        let greenChannel = CGFloat((valueArray[GreenChannelIndex] as NSString).floatValue) / 255
-        let blueChannel = CGFloat((valueArray[BlueChannelIndex] as NSString).floatValue) / 255
+        let redChannel = CGFloat((valueArray[RedChannelIndex] as NSString).floatValue) / 255.0
+        let greenChannel = CGFloat((valueArray[GreenChannelIndex] as NSString).floatValue) / 255.0
+        let blueChannel = CGFloat((valueArray[BlueChannelIndex] as NSString).floatValue) / 255.0
         
 //
         let picker = UIColorPickerViewController()

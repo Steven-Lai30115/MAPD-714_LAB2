@@ -4,6 +4,7 @@ import UIKit
 class DatePickerViewController: UIViewController {
 
     @IBOutlet weak var datePickerControl: UIDatePicker!
+    @IBOutlet weak var selectTime: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -15,7 +16,9 @@ class DatePickerViewController: UIViewController {
 
     
     @IBAction func selectButton_Pressed(_ sender: UIButton) {
-        print(datePickerControl.date)
+        let dateFormatter: DateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy hh:mm a"
+        selectTime.text = dateFormatter.string(from: datePickerControl.date)
     }
     
 }
